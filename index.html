@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="./fonts/SF-Pro-Medium.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      href="./fonts/SF-Pro-Black.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <title>Новый вкус жизни - 1 июня</title>
+  </head>
+  <body class="tea" id="tea">
+    <header class="tea__header">
+      <img class="tea__logo" src="./logo.svg" alt="logo" />
+    </header>
+
+    <main class="tea__main" id="main">
+      <div class="tea__content tea__content--main" id="main-content">
+        <div class="tea__content-bg tea__content--main-bg"></div>
+        <picture>
+          <source srcset="./cup-1.webp" type="image/webp" />
+          <img
+            class="tea__cup tea__cup--main-first"
+            id="tea-cup-main-first"
+            src="./cup-1.png"
+            alt="cup-1"
+          />
+        </picture>
+        <picture>
+          <source srcset="./cup-2.webp" type="image/webp" />
+          <img
+            class="tea__cup tea__cup--main-second"
+            id="tea-cup-main-second"
+            src="./cup-2.png"
+            alt="cup-2"
+          />
+        </picture>
+        <div class="tea__content-inner-wrapper">
+          <h2 class="tea__title">Чай не вода -</h2>
+          <h3 class="tea__description">настроение меняет!</h3>
+
+          <div class="tea__button-wrapper">
+            <a href="#form-content" class="tea__button">Выпить чаю</a>
+            <span class="tea__button-description">-заполнить форму</span>
+          </div>
+        </div>
+
+        <div class="tea__footer-text">
+          В нашей чайной комнате царит атмосфера спокойствия и умиротворения.
+        </div>
+      </div>
+
+      <div class="tea__content tea__content--form" id="form-content">
+        <div class="tea__content-bg tea__content--form-bg"></div>
+        <div class="tea__content-bg tea__content--form-blur"></div>
+        <picture>
+          <source srcset="./cup-1.webp" type="image/webp" />
+          <img
+            class="tea__cup tea__cup--form-first tea__cup--form-first-hide"
+            id="tea-cup-form-first"
+            src="./cup-1.png"
+            alt="cup-1"
+          />
+        </picture>
+        <picture>
+          <source srcset="./cup-2.webp" type="image/webp" />
+          <img
+            class="tea__cup tea__cup--form-second tea__cup--form-second-hide"
+            id="tea-cup-form-second"
+            src="./cup-2.png"
+            alt="cup-2"
+          />
+        </picture>
+
+        <div class="tea__content-inner-wrapper">
+          <h1 class="tea__title">Ты с нами?</h1>
+          <h3 class="tea__description">заполняй форму и наливай</h3>
+
+          <form class="tea__forms">
+            <input class="tea__input" type="text" placeholder="ФИО" />
+            <input class="tea__input" type="email" placeholder="Email" />
+            <input class="tea__input" type="tel" placeholder="Номер телефона" />
+          </form>
+
+          <div class="tea__button-wrapper">
+            <button class="tea__button">Отправить</button>
+            <span class="tea__button-description">-забронировать место</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tea__content tea__content--info" id="info-content">
+        <div class="tea__content-bg tea__content--info-bg"></div>
+        <picture>
+          <source srcset="./cup-1.webp" type="image/webp" />
+          <img
+            class="tea__cup tea__cup--info-first tea__cup--info-first-hide"
+            id="tea-cup-info-first"
+            src="./cup-1.png"
+            alt="cup-1"
+          />
+        </picture>
+        <picture>
+          <source srcset="./cup-2.webp" type="image/webp" />
+          <img
+            class="tea__cup tea__cup--info-second tea__cup--info-second-hide"
+            id="tea-cup-info-second"
+            src="./cup-2.png"
+            alt="cup-2"
+          />
+        </picture>
+
+        <div class="tea__content-inner-wrapper">
+          <h2 class="tea__title">01.06.24</h2>
+          <h3 class="tea__description">открытие чайной</h3>
+
+          <div class="tea__info-text-wrapper">
+            <p class="tea__info-text">
+              Любите чай и уютную атмосферу? Загляните в нашу чайную комнату на
+              Тюменской 78!
+            </p>
+            <p class="tea__info-text">
+              У нас вы найдете широкий выбор чая на любой вкус и безалкогольные
+              напитки.
+            </p>
+            <p class="tea__info-text">
+              А наша лофт-мебель создает расслабляющую атмосферу, где вы сможете
+              отдохнуть от городской суеты.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
