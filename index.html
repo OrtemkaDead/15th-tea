@@ -24,6 +24,8 @@
       <img class="tea__logo" src="./logo.svg" alt="logo" />
     </header>
 
+    <div class="tea__alert" id="alert"></div>
+
     <main class="tea__main" id="main">
       <div class="tea__content tea__content--main" id="main-content">
         <div class="tea__content-bg tea__content--main-bg"></div>
@@ -86,16 +88,37 @@
           <h1 class="tea__title">Ты с нами?</h1>
           <h3 class="tea__description">заполняй форму и наливай</h3>
 
-          <form class="tea__forms">
-            <input class="tea__input" type="text" placeholder="ФИО" />
-            <input class="tea__input" type="email" placeholder="Email" />
-            <input class="tea__input" type="tel" placeholder="Номер телефона" />
-          </form>
+          <form class="tea__forms" id="contactForm">
+            <input
+              class="tea__input"
+              type="text"
+              name="fullName"
+              placeholder="ФИО"
+              required
+              maxlength="50"
+            />
+            <input
+              class="tea__input"
+              type="email"
+              name="email"
+              placeholder="Email"
+              maxlength="50"
+              required
+            />
+            <input
+              class="tea__input"
+              type="tel"
+              name="phone"
+              placeholder="Номер телефона"
+              pattern="^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$"
+              required
+            />
 
-          <div class="tea__button-wrapper">
-            <button class="tea__button">Отправить</button>
-            <span class="tea__button-description">-забронировать место</span>
-          </div>
+            <div class="tea__button-wrapper">
+              <button class="tea__button" type="submit">Отправить</button>
+              <span class="tea__button-description">-забронировать место</span>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -143,5 +166,7 @@
     </main>
 
     <script src="./script.js"></script>
+    <script src="./api.js"></script>
+    <script src="./validate.js"></script>
   </body>
 </html>
